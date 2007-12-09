@@ -1,0 +1,26 @@
+first:
+  id: 1
+  test_user_id: 1
+  comment: '北京は大きな町です'
+  description: '北京'
+second:
+  id: 2
+  test_user_id: 2
+  comment: '東京はおおきな街です'
+  description: '東京'
+third:
+  id: 3
+  test_user_id: 1
+  comment: '東京はオオキナまちです'
+  description: '沖縄'
+fourth:
+  id: 4
+  test_user_id: 3
+  comment: '京都市は古都です'
+  description: '札幌'
+fifth:
+  id: 5
+  test_user_id: 4
+  comment: '都にきてます'
+  description: '大阪'
+  

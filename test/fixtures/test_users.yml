@@ -1,0 +1,24 @@
+first:
+  id: 1
+  fullname: '山田一郎'
+  description: 'いま東京都にいます'
+second:
+  id: 2
+  fullname: '山田太郎'
+  description: 'いま京都府にいます'
+third:
+  id: 3
+  fullname: '鈴木一郎'
+  description: '西東京市出身です'
+fourth:
+  id: 4
+  fullname: '鈴木太郎'
+  description: '北京にきてます'
+fifth:
+  id: 5
+  fullname: '佐藤一郎'
+  description: '南京にいます'
+sixth:
+  id: 6
+  fullname: '佐藤太郎'
+  description: '東京にいます'
