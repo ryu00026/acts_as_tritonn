@@ -35,9 +35,10 @@ module Tritonn #:nodoc:
         # Model.find_fulltext({:col1 => ["hoge foo"]})
         #   => SELECT * FROM models WHERE MATCH(col1) AGAINST('+hoge +foo' IN BOOLEAN MODE);
         # == OR検索
-        # Model.find_fulltext({:col1 => ["hoge foo"]})
-        #   => SELECT * FROM models WHERE MATCH(col1) AGAINST('+hoge +foo' IN BOOLEAN MODE);
-        
+        # Model.find_fulltext({:col1 => ["hoge", "foo"]})
+        #   => SELECT * FROM models WHERE MATCH(col1) AGAINST('-hoge -foo' IN BOOLEAN MODE);
+                
+
         # count(*) as count_all        
         def count_fulltext(query, options={})
           options = fulltext(query, options)
@@ -85,7 +86,6 @@ module Tritonn #:nodoc:
         end
         
         # TODO 
-        # これを実装するとSennaでは使えなくなる・・・・
         #kwic(
         # 文書,
         # 切り出す文書の最大バイト数,
@@ -100,9 +100,6 @@ module Tritonn #:nodoc:
         # 単語2の前につけられるタグ,
         # 単語2の後につけられるタグ, ...);        
         def kwic(query, kwic_options)
-          #options = {}
-          #snippet_options = snippet_options.is_a?(Hash) ? snippet_options.reverse_merge(options) : options
-          #%|KWIC() as #{kwic_options[:label]}|
         end
       end
     end

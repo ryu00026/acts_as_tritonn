@@ -1,2 +1,20 @@
 ActsAsTritonn
 ===========
+ActsAsTritonnはRailsからお手軽にtritonnを使うためのプラグインです。
+  class Article < ActiveRecord::Base
+    acts_as_tritonn
+  end
+  
+=ActiveRecordモジュールに下記のメソッド・オプションを追加します
+==modelで
+　　find_fulltext
+　　count_fulltext
+==migrateで
+　add_index :users, :profile, :fulltext => :ngram
+を追加します
+
+
+なお、mysql_fulltextはmasuidriveさんの許可を得てこのパッケージに含んでいます。
+
+Ryuichi Kato(ryu00026@gmail.com) http://d.hatena.ne.jp/ryu00026
+Special Thanks to masuidrive, http://blog.masuidrive.jp/
