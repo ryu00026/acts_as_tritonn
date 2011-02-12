@@ -13,6 +13,10 @@ ActsAsTritonnはRailsからお手軽にtritonnを使うためのプラグイン�
 　add_index :users, :profile, :fulltext => :ngram
 を追加します
 
+詳しい使い方は
+http://d.hatena.ne.jp/ryu00026/20071209/1197209405
+にあります
+
 
 なお、mysql_fulltextはmasuidriveさんの許可を得てこのパッケージに含んでいます。
 
